@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_last4.css">    
+    <title>「新聞網站系統測試」實驗</title>
+</head>
+<body>
+    <div class="introduction">
+        <h1 class="introduction_headline">「新聞網站系統測試」實驗</h1>
+        <p>大家好，我是政治大學資管所的學生 蘇晉威。</br>
+            目前正在為某新聞網站進行系統的測試，</br>
+            在正式實驗之前，需要請大家幫忙完成此份前測問卷。</br>
+            過程中您將閱讀幾則新聞，並回答相關問題。</br>
+            本份問卷時長約 10~15 分鐘，謝謝大家。</p>
+            
+    </div>
+    
+    <!-- <div align="center"><button class="start_button" onclick="javascript:location.href='news1_answer.html'">實驗開始</button></div> -->
+    <div align="center"><button class="start_button" onclick="dogo()">實驗開始</button></div>
+
+
+    <script>
+        function dogo(){
+          var urls = new Array();
+          urls[0] = "assisted/function_demo.html";
+          urls[1] = "normal/news1.html";
+          n = Math.floor(Math.random()*2);
+          location.href= urls[n];
+        
+        }
+    </script>
+        
+
+</body>
+</html>
+

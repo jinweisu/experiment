@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style_last4.css">  
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <title>「新聞網站系統測試」實驗</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mbti_h1"><h1>請回答下列問題</h1></div>
+        <div class="mbti_qusetion_area">
+            <div class="question">
+                <div class="question_title"><p>1. 一個球棒和一個球加在一起值1.1美元。球棒比球貴1美元。這個球值多少錢??</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_1" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(美元)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>2. 如果製作5個小部件需要5台機器5分鐘，那麼100台機器要花多長時間才能製作100個小部件?</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_2" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(分鐘)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>3. 湖裡有一小塊百合花。每天百合花的面積都會翻倍。如果這片百合花覆蓋整個湖泊需要48天的時間，那麼要用幾天才能覆蓋半個湖呢？?</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_3" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(天)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>4. 如果約翰6天能喝一桶水，瑪麗12天能喝一桶水，他們一起喝一桶水需要幾天?</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_4" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(天)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>5. 傑瑞同時在班上拿到前15名和後15名的成績，則他們班上有多少人?</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_5" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(人)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>6. 一個人以60美元買了一頭豬，以70美元賣出，以80美元買回，最後以90美元賣出。他賺了多少美元?</p></div>
+                <div class="answer_option">
+                    <div class="input-container" >
+                        <input type="input" id="input" name="crt_6" placeholder="請輸入您的答案">
+                        <p class="answer_unit">(美元)</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="question">
+                <div class="question_title"><p>7. 2008年初的一天，西蒙決定在股票市場投資8000美元。在他投資6個月後，即7月17日，他所購買的股票下跌了50%。對西蒙來說，幸運的是，從7月17日到10月17日，他購買的股票上漲了75%。此時，西蒙已經在股市中：?</p></div>
+                <div class="answer_option">
+                    <form>
+                        <label><input type="radio" name="crt_7" value="1" required>實現了收支平衡</label><br>
+                        <label><input type="radio" name="crt_7" value="2">領先於他開始的位置(有盈餘)</label><br>
+                        <label><input type="radio" name="crt_7" value="3">虧損了</label>
+                    </form>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="last3page_button">
+                <input class="" type ="button" onclick="history.back()" value="上一頁"></input> 
+                <!-- <input class="next_page_button" type ="button" value="下一頁" id="send"></input>  -->
+                <input class="" type ="button" id="send9" value="下一頁" onclick="send9()"></input> 
+            </div>
+            
+
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script type="text/javascript" src="assisted/index.js"></script> -->
+</body>
+</html>
