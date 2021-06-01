@@ -457,3 +457,74 @@ input[type='radio'] {
 .personinfo_4{
     font-family: STSong;
 }
+
+@media screen and (max-width:450px) { 
+    
+    .introduction{
+        background: rgb(255, 172, 172);
+        height: auto;
+        width: 80%;
+        border-radius: 20px;
+        margin:0px auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 30px;
+        padding: 10px;
+    }
+    
+    .introduction h1{
+        text-align: center;
+
+    }
+
+    .introduction p{
+        text-align: left;
+    }
+
+    .introduction_headline{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 40px;
+
+    }
+    
+    .start_button{
+        margin:0px auto;
+        text-align: center;
+    }
+        
+    .conti_qusetion_area .question{
+        width: 80%;
+    }
+
+
+    .answer_option_area{
+        width: 100%;
+        /* font-size: 100px; */
+    }
+    body {
+
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .mbti_qusetion_area .question{
+        width: 100%;
+        padding: 0;
+    }
+    .answer_option{
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width:320px) { 
+    body {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .conti_qusetion_area .question{
+        width: 100%;
+        padding: 0;
+    }
+
+}
