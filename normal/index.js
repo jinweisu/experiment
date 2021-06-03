@@ -379,6 +379,8 @@ function send10() {
   let personinfo_2 = $('input:radio:checked[name="personinfo_2"]').val();
   let personinfo_3 = $('input:radio:checked[name="personinfo_3"]').val();
   let personinfo_4 = $('select[name="personinfo_4"]').val();
+  let personinfo_5 = $('input[name="personinfo_5"]').val();
+
 
   var oneone = localStorage.getItem('oneone');  
   var onetwo = localStorage.getItem('onetwo');  
@@ -473,7 +475,7 @@ function send10() {
     alert("每題皆為必填，請確實填答");
   }else{
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbz4NJZBESEkhKC98IymBZgqnHt7UDk2BmKcQuaa1N9Spvp2452SWvYXGOjz67XAibTN/exec",
+      url: "https://script.google.com/macros/s/AKfycbxdem7XPGTXhZ383r_4v4Bq7WUGwqFggB3X3cgowd9_UBZKx98to8wbriSy6dz_yOKA/exec",
       data: {
           "oneone": oneone,
           "onetwo": onetwo,
@@ -559,12 +561,15 @@ function send10() {
           "personinfo_2": personinfo_2,
           "personinfo_3": personinfo_3,
           "personinfo_4": personinfo_4,
+          "personinfo_5": personinfo_5,
+
 
 
       },
       success: function(response) {
         if(response == "成功"){
-          alert("感謝您的協助，問卷已填寫完畢");
+          location.href='../thanks.html'
+
         }
       },
     });
