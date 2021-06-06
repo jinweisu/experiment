@@ -379,8 +379,9 @@ function send10() {
   let personinfo_2 = $('input:radio:checked[name="personinfo_2"]').val();
   let personinfo_3 = $('input:radio:checked[name="personinfo_3"]').val();
   let personinfo_4 = $('select[name="personinfo_4"]').val();
-  let personinfo_5 = $('input[name="personinfo_5"]').val();
-
+  let personinfo_5 = $('input:radio:checked[name="personinfo_5"]').val();
+  let personinfo_6 = $('input[name="personinfo_6"]').val();
+  
 
   var oneone = localStorage.getItem('oneone');  
   var onetwo = localStorage.getItem('onetwo');  
@@ -462,7 +463,12 @@ function send10() {
   var crt_6 = localStorage.getItem('crt_6'); 
   var crt_7 = localStorage.getItem('crt_7'); 
 
-
+  var today = new Date();
+  var date;
+  date = (today.getFullYear()) +"-" + (today.getMonth() + 1 ) + "-" + today.getDate() + "-" + today.toLocaleTimeString();
+  console.log(date)
+  console.log(today)
+  
   console.log(localStorage.getItem('oneone'))
   // console.log(oneone)
   if(personinfo_1 == undefined){
@@ -473,9 +479,12 @@ function send10() {
     alert("每題皆為必填，請確實填答");
   }else if(personinfo_4 == 0){
     alert("每題皆為必填，請確實填答");
+    
+  }else if(personinfo_5 == ""){
+    alert("每題皆為必填，請確實填答");
   }else{
     $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbxdem7XPGTXhZ383r_4v4Bq7WUGwqFggB3X3cgowd9_UBZKx98to8wbriSy6dz_yOKA/exec",
+      url: "https://script.google.com/macros/s/AKfycbwfzDK9L762zrPn8Ijta92NqlbwA5vGXZuDMGmsSeFY7_jdbMwxX-B6shLlbeS1KTBC/exec",
       data: {
           "oneone": oneone,
           "onetwo": onetwo,
@@ -562,8 +571,11 @@ function send10() {
           "personinfo_3": personinfo_3,
           "personinfo_4": personinfo_4,
           "personinfo_5": personinfo_5,
+          "personinfo_6": personinfo_6,
 
 
+          "date": date,
+          "today": today
 
       },
       success: function(response) {

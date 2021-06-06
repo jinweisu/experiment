@@ -255,10 +255,23 @@ input[type='radio'] {
     margin: 0 0.5em;
 } */
 
-.news_pic_area .news_pic{
+/* .news_pic_area .news_pic{
     margin: 0 auto;
     width: 50%;
     margin-top: 10px;
+} */
+
+
+
+#news3_assisted_pic{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#news3_assisted_pic_area{
+    margin: 0 auto;
+    width: 50%;
+    
 }
 
 @media screen and (max-width:450px) { 
@@ -496,8 +509,19 @@ input[type='radio'] {
 
     .news_pic_area .news_pic{
         margin: 0 auto;
-        width: 50%;
+        width: 100%;
         margin-top: 10px;
+    }
+
+    #news3_assisted_pic{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #news3_assisted_pic_area{
+        margin: 0 auto;
+        width: 100%;
+        
     }
 
 }

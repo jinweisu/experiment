@@ -414,6 +414,17 @@ input[type='radio'] {
     color: red;
 }
 
+
+#news3_assisted_pic{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#news3_assisted_pic_area{
+    margin: 0 auto;
+    
+}
+
 @media screen and (max-width:450px) { 
     body {
         font-family: STSong;
@@ -648,6 +659,16 @@ input[type='radio'] {
     }
     .function{
         width: 95%;
+    }
+
+    #news3_assisted_pic{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #news3_assisted_pic_area{
+        margin: 0 auto;
+        
     }
 }
 
