@@ -49,27 +49,56 @@ body {
     margin-top: 1.5%;
 }
 
+
 .introduction{
-    background: rgb(255, 172, 172);
     height: auto;
     width: 40%;
-    text-align: left;
     border-radius: 20px;
     margin:0px auto;
+
+    border：none;
+    margin-bottom: 10px;
+}
+
+
+.introduction_headline_div{
+    background: #f6c065;
+    height: auto;
+    /* width: 40%; */
+    text-align: left;
     /* margin-top: 30px; */
-    margin-bottom: 30px;
-    line-height: 30px;
+    /* margin-bottom: 30px; */
+    /* padding-bottom: 10px; */
+    /* padding: 10px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     padding-bottom: 10px;
-    padding: 10px;
 }
 
 .introduction_headline{
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
     text-align: center;
     line-height: 40px;
+    /* margin-bottom: 10px; */
 }
+
+.introduction_div{
+    background:#F8F8F8;
+    text-align: left;
+    padding: 10px;
+    line-height: 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px
+    
+
+}
+
+.important_info{
+    font-weight: bold;
+    color: red;
+}
+
 
 .start_button{
     margin:0px auto;
@@ -461,10 +490,10 @@ input[type='radio'] {
     font-family: STSong;
 }
 
-@media screen and (max-width:450px) { 
+@media screen and (max-width:1200px) { 
     
     .introduction{
-        background: rgb(255, 172, 172);
+        /* background: rgb(255, 172, 172); */
         height: auto;
         width: 80%;
         border-radius: 20px;
