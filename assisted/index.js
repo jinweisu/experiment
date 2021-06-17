@@ -476,7 +476,13 @@ function send10() {
     alert("每題皆為必填，請確實填答");
   }else if(personinfo_3 == undefined){
     alert("每題皆為必填，請確實填答");
-  }else if(personinfo_4 == 0){
+  }else if(personinfo_4 == null){
+    alert("每題皆為必填，請確實填答");
+    
+  }else if(personinfo_5 == undefined){
+    alert("每題皆為必填，請確實填答");
+    
+  }else if(personinfo_6 == ""){
     alert("每題皆為必填，請確實填答");
   }else{
     $.ajax({

@@ -470,6 +470,16 @@ function send10() {
   console.log(today)
   
   console.log(localStorage.getItem('oneone'))
+
+
+  console.log(personinfo_1)
+  console.log(personinfo_2)
+  console.log(personinfo_3)
+  console.log(personinfo_4)
+  console.log(personinfo_5)
+  console.log(personinfo_6)
+
+
   // console.log(oneone)
   if(personinfo_1 == undefined){
     alert("每題皆為必填，請確實填答");
@@ -477,10 +487,13 @@ function send10() {
     alert("每題皆為必填，請確實填答");
   }else if(personinfo_3 == undefined){
     alert("每題皆為必填，請確實填答");
-  }else if(personinfo_4 == 0){
+  }else if(personinfo_4 == null){
     alert("每題皆為必填，請確實填答");
     
-  }else if(personinfo_5 == ""){
+  }else if(personinfo_5 == undefined){
+    alert("每題皆為必填，請確實填答");
+    
+  }else if(personinfo_6 == ""){
     alert("每題皆為必填，請確實填答");
   }else{
     $.ajax({
