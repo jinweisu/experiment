@@ -345,17 +345,17 @@ function send9() {
   let crt_5 = $('input[name="crt_5"]').val();
   let crt_6 = $('input[name="crt_6"]').val();
   let crt_7 = $('input:radio:checked[name="crt_7"]').val();
-  if(crt_1 == undefined){
+  if(crt_1 == ""){
     alert("每題皆為必填，請確實填答");
-  }else if(crt_2 == undefined){
+  }else if(crt_2 == ""){
     alert("每題皆為必填，請確實填答");
-  }else if(crt_3 == undefined){
+  }else if(crt_3 == ""){
     alert("每題皆為必填，請確實填答");
-  }else if(crt_4 == undefined){
+  }else if(crt_4 == ""){
     alert("每題皆為必填，請確實填答");
-  }else if(crt_5 == undefined){
+  }else if(crt_5 == ""){
     alert("每題皆為必填，請確實填答");
-  }else if(crt_6 == undefined){
+  }else if(crt_6 == ""){
     alert("每題皆為必填，請確實填答");
   }else if(crt_7 == undefined){
     alert("每題皆為必填，請確實填答");
