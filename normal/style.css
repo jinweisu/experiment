@@ -321,6 +321,36 @@ input[type='radio'] {
 
 @media screen and (max-width:1200px) { 
 
+
+    .demo_head{
+        /* background: rgb(255, 172, 172); */
+        height: auto;
+        width: 95%;
+        /* border-radius: 20px; */
+        margin:0px auto;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+        line-height: 30px;
+        /* padding: 10px; */
+    }
+    
+    .demo_head h1{
+        text-align: center;
+
+    }
+
+    .demo_head p{
+        text-align: left;
+    }
+
+    .demo_headline{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 40px;
+
+    }
+
     body {
         font-family: STSong;
         color: #292929;
