@@ -48,6 +48,51 @@ body {
     margin-left: 2.5%;
     margin-top: 1.5%;
 }
+
+.demo{
+    margin-bottom: 30px;
+    
+}
+
+.demo_head{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 5px 5px #ffc2c2;
+	-moz-box-shadow: 5px 5px #ffc2c2;
+	box-shadow: 5px 5px #ffc2c2;
+}
+
+.demo_head_intro{
+    background:#F8F8F8;
+    line-height: 25px;
+    padding: 10px;
+    
+}
+
+
+.demo_headline{
+    background: #FFACAC;
+    height: auto;
+    /* border-radius: 20px; */
+    margin:0px auto;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    line-height: 30px;
+    padding: 10px;
+
+}
+
+.demo_headline{
+    font-size: 40px;
+    font-weight: bold;
+    /* margin-bottom: 15px; */
+    text-align: center;
+
+    /* margin-top: 310px; */
+}
+
+
 .introduction{
     background: rgb(255, 172, 172);
     height: auto;
